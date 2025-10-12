@@ -46,3 +46,19 @@ ul.dropdown-menu li a {
 .footer-menu-hover ul li a{
     transition: all 0.3s ease;
 }
+
+/*===================================
+        Section-1 css Start
+===================================*/
+.for-heading-hover h1 a:hover {
+    color: rgb(71, 71, 202) !important;
+}
+.for-heading-hover h1 a{
+    transition: all 0.3s ease;
+}
+.title-hover h6 a:hover{
+    color: rgb(71, 71, 202) !important;
+}
+.title-hover h6 a{
+    transition: all 0.3s ease;
+}
