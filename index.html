@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- External CSS Link  -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS Link  -->
+    <link rel="stylesheet" href="responsive.css">
 
 </head>
 
@@ -31,7 +35,7 @@
             <div class="row">
 
                 <!-- date start  -->
-                <div class="col-md-3">
+                <div class="col-md-3 d-md-block d-none">
                     <span>ঢাকা, শনিবার ১১ অক্টোবর ২০২৫</span>
                     <br>
                     <span>২৬ আশ্বিন ১৪৩২, ১৮ রবিউস সানি ১৪৪৭</span>
@@ -39,13 +43,13 @@
                 <!-- date end  -->
 
                 <!-- Main Logo Start  -->
-                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="col-md-6 d-md-flex justify-content-center align-items-center d-md-block d-none">
                     <a href="index.html"><img src="images/main-logo.png" alt="Main-logo" class="img-fluid"></a>
                 </div>
                 <!-- Main Logo End  -->
 
                 <!-- Social logo and calendar Start -->
-                <div class="col-md-3 d-flex align-items-center">
+                <div class="col-md-3 d-flex align-items-center d-md-block d-none">
                     <ul class="list-unstyled d-flex justify-content-between mb-0">
                         <li><a href="#" class="text-decoration-none text-danger me-2">ই-পেপার</a></li>
                         <li><a href="#" class="text-decoration-none text-secondary me-2"><i
@@ -82,18 +86,74 @@
 
     <section>
         <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div class="container">
+            <div class="container for-mobile-version-center">
+                <div class="d-flex justify-content-between">
+                    <div class="col-6 d-md-none d-block">
+                        <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo"
+                                class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start d-flex justify-content-between" id="navbarNavDropdown">
+                
+                 <div class="d-flex justify-content-between align-items-center px-4">
+                    <!-- logo image for mobile  -->
+                    <div class="col-6 d-md-none d-block">
+                        <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo"
+                                class="img-fluid w-75"></a>
+                    </div>
+                    <!-- close button  -->
+                    <button type="button" class="btn-close d-md-none d-block" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                 </div>
+                    <!-- For mobile top menu Start -->
+                    <div class="d-flex justify-content-between d-md-none d-block mt-3 px-4">
 
-                <!-- <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo" class="img-fluid"></a> -->
+                        <li class="nav-item px-2 for-border-right border rounded-3 py-2 px-3">
+                            <a class="nav-link" href="#">ই-পেপার</a>
+                        </li>
+                        <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
+                            <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                পত্রিকা
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">এক নজরে</a></li>
+                                <li><a class="dropdown-item" href="#">প্রথম পাতা</a></li>
+                                <li><a class="dropdown-item" href="#">শেষের পাতা</a></li>
+                                <li><a class="dropdown-item" href="#">খবর</a></li>
+                                <li><a class="dropdown-item" href="#">খেলা</a></li>
+                                <li><a class="dropdown-item" href="#">দেশে দেশে</a></li>
+                                <li><a class="dropdown-item" href="#">প্রিয় দেশ</a></li>
+                            </ul>
+                        </li>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavDropdown">
+                        <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ফিচার
+                            </a>
+                            <ul class="dropdown-menu feature-dropdown-position">
+                                <li><a class="dropdown-item" href="#">ডাক্তার আছেন</a></li>
+                                <li><a class="dropdown-item" href="#">চাকরি আছে</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ বিনোদন</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ উৎসব ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">সিলেবাসে নেই </a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <!-- For mobile top menu end  -->
 
-                    <ul class="navbar-nav d-flex align-items-center">
+                     <!-- Main Navbar Start  -->
+                    <ul class="navbar-nav d-flex align-items-md-center main-menu-box">
+
+
                         <li class="nav-item px-2 for-border-right">
                             <a class="nav-link active" aria-current="page" href="#">সর্বশেষ</a>
                         </li>
@@ -143,7 +203,7 @@
                             <a class="nav-link text-info" href="#">ভিডিও</a>
                         </li>
 
-                        <li class="nav-item dropdown px-2 for-border-right">
+                        <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
                             <a class="nav-link dropdown-toggle text-success" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 পত্রিকা
@@ -159,7 +219,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown px-2 for-border-right">
+                        <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 ফিচার
@@ -175,13 +235,22 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item d-md-block d-none">
                             <a class="nav-link" href="#"><i class="bi bi-list fs-4"></i></a>
                         </li>
                     </ul>
 
+                    <!-- date for mobile version start  -->
+                    <div class="d-md-none d-block bg-body-tertiary w-100 mt-3 py-3 px-4 text-center">
+                        <span>ঢাকা, শনিবার ১১ অক্টোবর ২০২৫</span>
+                        <br>
+                        <span>২৬ আশ্বিন ১৪৩২, ১৮ রবিউস সানি ১৪৪৭</span>
+                    </div>
+                    <!-- date for mobile version end  -->
+
                 </div>
             </div>
+
         </nav>
     </section>
     <!-- ======== Navbar Section End ======== -->
@@ -401,11 +470,11 @@
 ============================================================================================ -->
 
 
-<!--============================================================================================
+    <!--============================================================================================
                          Section-3 Start
 ============================================================================================ -->
     <section>
-        <div class="container mt-3">
+        <div class="container mt-md-4 mt-2">
             <div class="row">
                 <div class="col-md-9">
                     <div class="row">
@@ -450,7 +519,7 @@
                         <!--===== item end ===== -->
 
                         <!--===== item start ===== -->
-                        <div class="col-md-4 border-end">
+                        <div class="col-md-4">
                             <hr class="mt-0">
                             <div class="row position-relative">
 
@@ -510,7 +579,7 @@
                         <!--===== item end ===== -->
 
                         <!--===== item start ===== -->
-                        <div class="col-md-4 border-end mt-3">
+                        <div class="col-md-4 mt-3">
                             <hr class="mt-0">
                             <div class="row position-relative">
 
@@ -570,7 +639,7 @@
                         <!--===== item end ===== -->
 
                         <!--===== item start ===== -->
-                        <div class="col-md-4 border-end mt-3">
+                        <div class="col-md-4 mt-3">
                             <hr class="mt-0">
                             <div class="row position-relative">
 
@@ -597,13 +666,13 @@
     </section>
 
 
-<!--============================================================================================
+    <!--============================================================================================
                          Section-3 End
 ============================================================================================ -->
 
 
 
-<!--============================================================================================
+    <!--============================================================================================
                             Footer Section Start
 ============================================================================================ -->
 

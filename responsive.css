@@ -1,0 +1,52 @@
+
+
+/*======================================
+    Small phones to larger phones 
+ ======================================*/
+@media (max-width: 480px) {
+
+  
+}
+
+/*=====================================================
+        Tablets / small laptops 
+ ====================================================*/
+@media (max-width: 767px) {
+
+/* ======== Navbar css start======= */
+  .for-border-right{
+    border-right: none;
+    list-style: none;
+  }
+
+  button.btn-close {
+    padding: 10px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.main-menu-box{
+    overflow: scroll;
+    margin-top: 12px;
+    padding-left: 16px;
+
+}
+
+
+.offcanvas.offcanvas-start{
+    border-right: none;
+}
+
+.for-mobile-version-center{
+ display: flex;
+ justify-content: center !important;
+}
+
+.feature-dropdown-position{
+ left: -70px !important;
+}
+/* ======== Navbar css end======= */
+
+
+}
+
+
