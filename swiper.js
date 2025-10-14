@@ -1,31 +1,75 @@
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  spaceBetween: 30,
-  slidesPerGroup: 3, // This stays fixed
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
-  },
-  navigation: {
-    nextEl: ".custom-button-prev",
-    prevEl: ".custom-button-next",
-  },
-  breakpoints: {
-    // when window width is >= 992px (desktop)
-    992: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+
+/*========================================================
+      For Section-4 ==  Slider js Start
+===========================================================*/
+var swiper = new Swiper(".mySwiperShopByCat", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 25,
+      },
+      
     },
-    // when window width is >= 768px (tablet)
-    768: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+
+     autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+
+    });
+
+
+    /*========================================================
+      For Section-5 ==  Slider-2 js Start
+===========================================================*/
+var swiper = new Swiper(".mySwiperSlider2", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".card-slider-btn-next",
+        prevEl: ".card-slider-btn-prev",
+      },
+      breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 25,
+      },
+      
     },
-    // when window width is < 768px (mobile)
-    0: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-  },
-});
+
+     autoplay: {
+        delay: 2800,
+        disableOnInteraction: false
+      },
+
+    });
+
+

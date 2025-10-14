@@ -61,3 +61,35 @@ ul.dropdown-menu li a {
 .title-hover h6 a{
     transition: all 0.3s ease;
 }
+
+/*===================================
+        Section-4 Slider css Start
+===================================*/
+
+.news-slide-hover h6 a:hover {
+    color: royalblue !important;
+}
+
+.news-slide-hover h6 a:hover {
+    transition: all 0.3s ease;
+}
+
+.news-slide-hover:hover {
+  border: 1px solid grey; /* hover border color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.news-slide-hover:hover img {
+  transform: scale(1.1); /* zoom effect */
+}
+
+.news-slide-hover {
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
+  background-color: #f8f9fa; /* light background */
+}
+
+.news-slide-hover img {
+  transition: transform 0.4s ease;
+}
