@@ -114,6 +114,10 @@ ul.dropdown-menu li a {
 }
 
 
+.bg-gradient-color{
+  background: linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.9));
+}
+
 /*=====================================================================
                 Category Page CSS Start
 ==================================================================*/
