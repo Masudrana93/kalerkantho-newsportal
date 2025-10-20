@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalerkantho</title>
+
+    <!-- Bootstrap CSS Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap icons Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- External CSS Link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS Link  -->
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+    <!--============================================================================================
+                            Header Section Start 
+============================================================================================ -->
+
+    <!-- ======== Top Part Date and Logo Start ====== -->
+
+    <section>
+        <div class="container my-md-4 my-2">
+            <div class="row">
+
+                <!-- date start  -->
+                <div class="col-md-3 d-md-block d-none">
+                    <span>ঢাকা, শনিবার ১১ অক্টোবর ২০২৫</span>
+                    <br>
+                    <span>২৬ আশ্বিন ১৪৩২, ১৮ রবিউস সানি ১৪৪৭</span>
+                </div>
+                <!-- date end  -->
+
+                <!-- Main Logo Start  -->
+                <div class="col-md-6 d-md-flex justify-content-center align-items-center d-md-block d-none">
+                    <a href="index.html"><img src="images/main-logo.png" alt="Main-logo" class="img-fluid"></a>
+                </div>
+                <!-- Main Logo End  -->
+
+                <!-- Social logo and calendar Start -->
+                <div class="col-md-3 d-flex align-items-center d-md-block d-none">
+                    <ul class="list-unstyled d-flex justify-content-between mb-0">
+                        <li><a href="#" class="text-decoration-none text-danger me-2">ই-পেপার</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary me-2"><i
+                                    class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary me-2"><i
+                                    class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary me-2"><i
+                                    class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary me-2"><i
+                                    class="bi bi-youtube"></i></a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary me-2"><i
+                                    class="bi bi-threads-fill"></i></a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary me-2"><i
+                                    class="bi bi-search"></i></a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary me-2">
+                                <i class="bi bi-calendar-date"></i>
+                                <i class="bi bi-caret-down-fill"></i>
+                            </a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary"><i class="bi bi-translate"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social logo and calendar End -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======== Top Part Date and Logo End ======== -->
+
+    <!-- ======== Navbar Section Start ======== -->
+
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+            <div class="container for-mobile-version-center">
+                <div class="d-flex justify-content-between">
+                    <div class="col-6 d-md-none d-block">
+                        <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo"
+                                class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start d-flex justify-content-between" id="navbarNavDropdown">
+
+                    <div class="d-flex justify-content-between align-items-center px-4">
+                        <!-- logo image for mobile  -->
+                        <div class="col-6 d-md-none d-block">
+                            <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo"
+                                    class="img-fluid w-75"></a>
+                        </div>
+                        <!-- close button  -->
+                        <button type="button" class="btn-close d-md-none d-block" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <!-- For mobile top menu Start -->
+                    <div class="d-flex justify-content-between d-md-none d-block mt-3 px-4">
+
+                        <li class="nav-item px-2 for-border-right border rounded-3 py-2 px-3">
+                            <a class="nav-link" href="#">ই-পেপার</a>
+                        </li>
+                        <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
+                            <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                পত্রিকা
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">এক নজরে</a></li>
+                                <li><a class="dropdown-item" href="#">প্রথম পাতা</a></li>
+                                <li><a class="dropdown-item" href="#">শেষের পাতা</a></li>
+                                <li><a class="dropdown-item" href="#">খবর</a></li>
+                                <li><a class="dropdown-item" href="#">খেলা</a></li>
+                                <li><a class="dropdown-item" href="#">দেশে দেশে</a></li>
+                                <li><a class="dropdown-item" href="#">প্রিয় দেশ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ফিচার
+                            </a>
+                            <ul class="dropdown-menu feature-dropdown-position">
+                                <li><a class="dropdown-item" href="#">ডাক্তার আছেন</a></li>
+                                <li><a class="dropdown-item" href="#">চাকরি আছে</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ বিনোদন</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ উৎসব ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">সিলেবাসে নেই </a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <!-- For mobile top menu end  -->
+
+                    <!-- Main Navbar Start  -->
+                    <ul class="navbar-nav d-flex align-items-md-center main-menu-box">
+
+
+                        <li class="nav-item px-2 for-border-right">
+                            <a class="nav-link active" aria-current="page" href="#">সর্বশেষ</a>
+                        </li>
+                        <li class="nav-item dropdown px-2 for-border-right">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                বাংলাদেশ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">জাতীয়</a></li>
+                                <li><a class="dropdown-item" href="#">সারাবাংলা</a></li>
+                                <li><a class="dropdown-item" href="#">রাজধানী</a></li>
+                                <li><a class="dropdown-item" href="#">রাজনীতি</a></li>
+                                <li><a class="dropdown-item" href="#">আইন-আদালত</a></li>
+                                <li><a class="dropdown-item" href="#">শিক্ষা</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2 for-border-right">
+                            <a class="nav-link" href="#">বিশ্ব</a>
+                        </li>
+                        <li class="nav-item px-2 for-border-right">
+                            <a class="nav-link" href="#">খেলা</a>
+                        </li>
+                        <li class="nav-item px-2 for-border-right">
+                            <a class="nav-link" href="#">বিনোদন</a>
+                        </li>
+                        <li class="nav-item px-2 for-border-right">
+                            <a class="nav-link" href="#">বাণিজ্য</a>
+                        </li>
+                        <li class="nav-item dropdown px-2 for-border-right">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ইসলামী জীবন
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">অনলাইন</a></li>
+                                <li><a class="dropdown-item" href="#">প্রিন্ট</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2 for-border-right">
+                            <a class="nav-link" href="#">জীবনযাপন</a>
+                        </li>
+                        <li class="nav-item px-2 for-border-right">
+                            <a class="nav-link" href="#">বসুন্ধরা শুভসংঘ</a>
+                        </li>
+                        <li class="nav-item px-2 for-border-right">
+                            <a class="nav-link text-info" href="#">ভিডিও</a>
+                        </li>
+
+                        <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
+                            <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                পত্রিকা
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">এক নজরে</a></li>
+                                <li><a class="dropdown-item" href="#">প্রথম পাতা</a></li>
+                                <li><a class="dropdown-item" href="#">শেষের পাতা</a></li>
+                                <li><a class="dropdown-item" href="#">খবর</a></li>
+                                <li><a class="dropdown-item" href="#">খেলা</a></li>
+                                <li><a class="dropdown-item" href="#">দেশে দেশে</a></li>
+                                <li><a class="dropdown-item" href="#">প্রিয় দেশ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ফিচার
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ডাক্তার আছেন</a></li>
+                                <li><a class="dropdown-item" href="#">চাকরি আছে</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ বিনোদন</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ উৎসব ২০২৪</a></li>
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৫</a></li>
+                                <li><a class="dropdown-item" href="#">সিলেবাসে নেই </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item d-md-block d-none">
+                            <a class="nav-link" href="#"><i class="bi bi-list fs-4"></i></a>
+                        </li>
+                    </ul>
+
+                    <!-- date for mobile version start  -->
+                    <div class="d-md-none d-block bg-body-tertiary w-100 mt-3 py-3 px-4 text-center">
+                        <span>ঢাকা, শনিবার ১১ অক্টোবর ২০২৫</span>
+                        <br>
+                        <span>২৬ আশ্বিন ১৪৩২, ১৮ রবিউস সানি ১৪৪৭</span>
+                    </div>
+                    <!-- date for mobile version end  -->
+
+                </div>
+            </div>
+
+        </nav>
+    </section>
+    <!-- ======== Navbar Section End ======== -->
+
+
+    <!--============================================================================================
+                            Header Section End
+============================================================================================ -->
+
+    <!--============================================================================================
+                             Section-1 News Details Start
+============================================================================================ -->
+
+    <section>
+        <div class="container">
+            <!-- Breadcrumb Start  -->
+            <nav aria-label="breadcrumb" class="my-md-4 my-2">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+            <!-- Breadcrumb End  -->
+
+            <div class="row">
+                <div class="col-md-9 my-md-4 my-2">
+                    <!-- news heading  -->
+                    <div class="mb-md-5 mb-2">
+                        <h2 class=""> সেনাবাহিনীকে সর্বোচ্চ প্রস্তুতি নিতে বললেন ইরানের সেনাপ্রধান </h2>
+                    </div>
+
+                    <div class="row">
+                        <!-- share links  -->
+                        <div class="col-md-2">
+                            <div class="mb-md-4 mb-2">
+                                <h6><i class="bi bi-pencil-square text-danger"></i> অনলাইন ডেস্ক</h6>
+                            </div>
+                            <!-- date and time  -->
+                            <span class="text-secondary">২০ অক্টোবর, ২০২৫ ১৪:৪৯</span>
+
+                            <!-- share icons -->
+                            <div class="mt-md-4 mt-2">
+                                <h6 class="text-center text-success">শেয়ার</h6>
+                                <hr class="mt-2">
+
+                                <ul class="list-unstyled text-center">
+                                    <li class="p-2"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                    <li class="p-2"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                                    <li class="p-2"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                    <li class="p-2"><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                                    <li class="p-2"><a href="#" class="btn btn-light text-info">অ +</a></li>
+                                    <li class="p-2"><a href="#" class="btn btn-light text-info">অ -</a></li>
+                                    <li class="p-2"><a href="#" class="btn btn-light text-info"><i
+                                                class="bi bi-printer"></i></a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- news details  -->
+                        <div class="col-md-10">
+                            <div class="mb-md-4 mb-2"><img src="images/troops.jpg" alt="Photo"
+                                    class="img-fluid rounded-3"></div>
+
+                            <div class="">
+                                <p class="fs-5 lh-lg">ইরানের সশস্ত্র বাহিনীর প্রধান মেজর জেনারেল আব্দুর রহিম মুসাভি
+                                    বলেছেন, সেনাবাহিনীকে
+                                    সর্বোচ্চ প্রস্তুত অবস্থায় থাকতে হবে এবং প্রতিদিন নিজেদের সক্ষমতা আরো শক্তিশালী করতে
+                                    হবে।
+                                    <br>
+                                    সিনিয়র কমান্ডারদের উপস্থিতিতে আয়োজিত সেনা কর্মকর্তাদের সমাপনী অনুষ্ঠানে বক্তব্য দিতে
+                                    গিয়ে মেজর জেনারেল মুসাভি নবীন কর্মকর্তাদের অভিনন্দন জানান এবং তাদের ‘প্রতিরোধ
+                                    ফ্রন্টের
+                                    অফিসার’ ও ভবিষ্যৎ সেনা নেতৃত্ব হিসেবে বর্ণনা করেন।
+                                    <br>
+                                    তিনি বলেন, আজ ফিলিস্তিন বিশ্বের প্রিয়তম নাম, আর গাজা দৃঢ়তা ও তলোয়ারের ওপর রক্তের
+                                    বিজয়ের
+                                    প্রতীক।
+
+                                    ইরানের সশস্ত্র বাহিনীর প্রধান বলেন, আল-আকসা স্টর্ম অভিযানের ব্যাপক প্রভাব রয়েছে, যা
+                                    বৃহত্তর আঞ্চলিক ও বৈশ্বিক পরিবর্তনের সূচনা করেছে।
+
+                                    <br>
+                                    তিনি উল্লেখ করেন, বছরের পর বছর যুক্তরাষ্ট্র ও জায়নবাদী শাসন নিজেদের ন্যায়পরায়ণ
+                                    হিসেবে
+                                    উপস্থাপনের জন্য গণমাধ্যমে আধিপত্য বিস্তার করেছিল, কিন্তু আজ তাদের প্রকৃত অপরাধী,
+                                    রক্তপিপাসু ও শিশু হত্যাকারী চেহারা বিশ্ববাসীর সামনে উন্মোচিত হয়েছে। একসময় প্রায়
+                                    বিস্মৃত
+                                    ফিলিস্তিন আজ আবারও বৈশ্বিক ইস্যুর কেন্দ্রবিন্দুতে ফিরে এসেছে।
+
+                                    নিজ বক্তব্যে তিনি আরো বলেন, জায়নবাদী শাসন, যুক্তরাষ্ট্রের সহায়তায়, তাদের লজ্জাজনক
+                                    পরাজয়, জনরোষ ও অভ্যন্তরীণ বিশৃঙ্খলা থেকে রেহাই পেতে ইরানের ওপর হামলার ষড়যন্ত্র
+                                    করেছিল।
+                                    কিন্তু তারা মারাত্মক পরাজয়ের সম্মুখীন হয় এবং শেষ পর্যন্ত বাধ্য হয়ে যুদ্ধবিরতিতে
+                                    সম্মত
+                                    হয়।
+
+                                    জেনারেল মুসাভি বলেন, শত্রুর লক্ষ্য হলো জাতীয় সংহতি দুর্বল করা এবং ইরানের অনন্য
+                                    প্রতিরোধ দুর্গকে ভেঙে দেওয়া। তাই সশস্ত্র বাহিনীকে সর্বদা সর্বোচ্চ প্রস্তুতি ধরে
+                                    রাখতে হবে এবং প্রতিদিন নিজেদের সক্ষমতা আরো বাড়াতে হবে।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side heading scroll-bar Start -->
+                <div class="col-md-3">
+                    <!-- Sorboses songbad Start  -->
+                    <div class="row mb-md-5 mb-3">
+                        <div class="col-12">
+
+                            <div class="bg-body-tertiary py-2 px-3 shadow">
+                                <h4 class="text-center mb-0">সর্বশেষ সংবাদ</h4>
+                            </div>
+
+                            <ul class="list-unstyled">
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+
+                            </ul>
+                        </div>
+                        <!-- Right side heading scroll-bar End -->
+                    </div>
+                    <!-- Sorboses songbad End  -->
+
+                    <!-- Sorbadik potitho Start  -->
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="bg-body-tertiary py-2 px-3 shadow">
+                                <h4 class="text-center mb-0">সর্বাধিক পঠিত</h4>
+                            </div>
+
+                            <ul class="list-unstyled">
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+                                <!-- item start  -->
+                                <li class="mt-md-3 mt-2"><a href="#" class="text-decoration-none text-secondary">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="bi bi-caret-right-fill me-2 text-danger"></i>
+
+                                            <div>
+                                                <h6> অভিমান করে বাড়ি ছেড়ে চাকরি নেয় মিরপুরে, ৩ দিন পর আগুনে মৃত্যু</h6>
+
+                                                <div>
+                                                    <time datetime=""><i class="bi bi-clock-history"></i> ৭ মিনিট
+                                                        আগে</time>
+                                                    <small class="text-danger"> | সারাবাংলা</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                </li>
+                                <!-- item end  -->
+
+
+                            </ul>
+                        </div>
+                        <!-- Right side heading scroll-bar End -->
+                    </div>
+                    <!-- Sorbadik potitho End  -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--============================================================================================
+                             Section-1 News Details End
+============================================================================================ -->
+
+
+
+    <!--============================================================================================
+                            Footer Section Start
+============================================================================================ -->
+
+    <section class="bg-body-tertiary">
+        <div class="container mt-5">
+            <!--========== Footer menu Start ========== -->
+            <div class="row py-md-5 py-3">
+                <!-- first part start  -->
+                <div class="col-md-3">
+                    <div>
+                        <h5 class="fw-bold">মোবাইল অ্যাপস ডাউনলোড করুন</h5>
+                        <div class=" border border-bottom-3 w-25 border-danger" border-3></div>
+                    </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <a href="#" class="me-3"><img src="images/google-play-store.jpg" alt="Google play store logo"
+                                class="img-fluid rounded-3"> </a>
+                        <a href="#" class=""> <img src="images/Apple-store.jpg" alt="Apple store logo"
+                                class="img-fluid rounded-3"> </a>
+                    </div>
+
+                    <div class="mt-md-5 mt-3">
+                        <h6 class="fw-bold">অনুসরণ করুন</h6>
+                        <ul class="list-unstyled d-flex mb-0">
+
+                            <li><a href="#" class="text-decoration-none text-primary me-2"><i
+                                        class="bi bi-facebook"></i></a></li>
+                            <li><a href="#" class="text-decoration-none  me-2"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary me-2"><i
+                                        class="bi bi-instagram"></i></a></li>
+                            <li><a href="#" class="text-decoration-none text-danger me-2"><i
+                                        class="bi bi-youtube"></i></a></li>
+                            <li><a href="#" class="text-decoration-none text-black me-2"><i
+                                        class="bi bi-threads-fill"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- first part end -->
+
+                <!-- second part start  -->
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <h5 class="fw-bold">আজকের পত্রিকা</h5>
+                        <div class=" border border-bottom-3 w-25 border-danger" border-3></div>
+                    </div>
+                    <div class="footer-menu-hover">
+                        <ul class="list-unstyled mb-0">
+
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">প্রথম পাতা</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">খেলা</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">শুভসংঘ</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">শেষের পাতা</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">খবর</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">দেশে দেশে</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- second part end -->
+
+                <!-- Third part start  -->
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <h5 class="fw-bold">অনলাইন</h5>
+                        <div class=" border border-bottom-3 w-25 border-danger" border-3></div>
+                    </div>
+                    <div class="footer-menu-hover">
+                        <ul class="list-unstyled mb-0">
+
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">জাতীয়</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">বিশ্ব</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">বিনোদন</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">সারাবাংলা</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">বাণিজ্য</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">খেলাধুলা</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Third part end -->
+
+                <!-- Fourth part start  -->
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <h5 class="fw-bold">বিজ্ঞাপন</h5>
+                        <div class=" border border-bottom-3 w-25 border-danger" border-3></div>
+                    </div>
+                    <div class="footer-menu-hover">
+                        <ul class="list-unstyled mb-0">
+
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">মূল্য তালিকা
+                                    (প্রিন্ট
+                                    ভার্সন)</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fourth part end -->
+            </div>
+            <!--========= Footer menu End ============= -->
+
+            <!--========= Footer terms and condition menu Start ============= -->
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="text-secondary">সম্পাদক : xyz </span>
+                </div>
+                <div class="col-md-5 footer-menu-hover">
+                    <ul class="list-unstyled d-flex justify-content-between mb-0">
+
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">শর্তাবলী</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">গোপনীয়তা নীতি</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">যোগাযোগ করুন</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--========= Footer terms and condition menu End ============= -->
+
+            <!--========= Copy right part Start ============= -->
+            <div class="row py-md-4 py-2">
+                <div class="col-12 d-flex justify-content-center">
+                    <small class="text-secondary">স্বত্ব © ২০২৫ কালের কণ্ঠ</small>
+                </div>
+            </div>
+            <!--========= Copy right part End ============= -->
+        </div>
+    </section>
+
+    <!--============================================================================================
+                            Footer Section End
+============================================================================================ -->
+
+
+
+
+    <!-- Bootstrap-bundle-min-js Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+
+</body>
+
+</html>
