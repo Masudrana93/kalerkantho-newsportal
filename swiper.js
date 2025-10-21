@@ -1,5 +1,26 @@
 
 /*========================================================
+      For Section-1 == Right side Slider js Start
+===========================================================*/
+var swiper = new Swiper(".mySwiperSingleSlide", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".right-slider-btn-next",
+        prevEl: ".right-slider-btn-prev",
+      },
+
+     autoplay: {
+        delay: 3200,
+        disableOnInteraction: false
+      },
+
+    });
+
+
+
+
+/*========================================================
       For Section-4 ==  Slider js Start
 ===========================================================*/
 var swiper = new Swiper(".mySwiperShopByCat", {
