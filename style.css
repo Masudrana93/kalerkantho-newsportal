@@ -152,3 +152,32 @@ ul.dropdown-menu li a {
 /*=====================================================================
                 Single Page CSS End
 ==================================================================*/
+
+/*=====================================================================
+                Archive Page CSS Start
+==================================================================*/
+ul.list-group.list-group-flush {
+    overflow: auto;
+    max-height: 350px;
+}
+.card-body h5 a{
+  transition: all 0.3s ease;
+}
+.card-body h5 a:hover {
+    color: blue !important;
+}
+li.list-group-item a:hover {
+    color: blue !important;
+}
+li.list-group-item a{
+  transition: all 0.3s ease;
+}
+.card-title a{
+  transition: all 0.3s ease;
+}
+.card-title a:hover{
+  color: blue !important;
+}
+/*=====================================================================
+                Archive Page CSS End
+==================================================================*/
