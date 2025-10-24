@@ -84,173 +84,336 @@
     <!-- ======== Navbar Section Start ======== -->
 
     <section>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div class="container for-mobile-version-center">
-                <div class="d-flex justify-content-between">
-                    <div class="col-6 d-md-none d-block">
-                        <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo"
-                                class="img-fluid"></a>
-                    </div>
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="offcanvas offcanvas-start d-flex justify-content-between" id="navbarNavDropdown">
+        <div class="container">
+            <div class="row">
+                <div class="col-11">
 
-                    <div class="d-flex justify-content-between align-items-center px-4">
-                        <!-- logo image for mobile  -->
-                        <div class="col-6 d-md-none d-block">
-                            <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo"
-                                    class="img-fluid w-75"></a>
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+                        <div class="container for-mobile-version-center">
+                            <div class="d-flex justify-content-between">
+                                <div class="col-6 d-md-none d-block">
+                                    <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo"
+                                            class="img-fluid"></a>
+                                </div>
+                                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                            <div class="offcanvas offcanvas-start d-flex justify-content-between"
+                                id="navbarNavDropdown">
+
+                                <div class="d-flex justify-content-between align-items-center px-4">
+                                    <!-- logo image for mobile  -->
+                                    <div class="col-6 d-md-none d-block">
+                                        <a class="navbar-brand" href="#"><img src="images/main-logo.png" alt="main-logo"
+                                                class="img-fluid w-75"></a>
+                                    </div>
+                                    <!-- close button  -->
+                                    <button type="button" class="btn-close d-md-none d-block"
+                                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <!-- For mobile top menu Start -->
+                                <div class="d-flex justify-content-between d-md-none d-block mt-3 px-4">
+
+                                    <li class="nav-item px-2 for-border-right border rounded-3 py-2 px-3">
+                                        <a class="nav-link" href="#">ই-পেপার</a>
+                                    </li>
+                                    <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
+                                        <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            পত্রিকা
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="category.html">এক নজরে</a></li>
+                                            <li><a class="dropdown-item" href="category.html">প্রথম পাতা</a></li>
+                                            <li><a class="dropdown-item" href="category.html">শেষের পাতা</a></li>
+                                            <li><a class="dropdown-item" href="category.html">খবর</a></li>
+                                            <li><a class="dropdown-item" href="category.html">খেলা</a></li>
+                                            <li><a class="dropdown-item" href="category.html">দেশে দেশে</a></li>
+                                            <li><a class="dropdown-item" href="category.html">প্রিয় দেশ</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            ফিচার
+                                        </a>
+                                        <ul class="dropdown-menu feature-dropdown-position">
+                                            <li><a class="dropdown-item" href="category.html">ডাক্তার আছেন</a></li>
+                                            <li><a class="dropdown-item" href="category.html">চাকরি আছে</a></li>
+                                            <li><a class="dropdown-item" href="category.html">ঈদ বিনোদন</a></li>
+                                            <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৪</a></li>
+                                            <li><a class="dropdown-item" href="category.html">ঈদ উৎসব ২০২৪</a></li>
+                                            <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৫</a></li>
+                                            <li><a class="dropdown-item" href="category.html">সিলেবাসে নেই </a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <!-- For mobile top menu end  -->
+
+                                <!-- Main Navbar Start  -->
+                                <ul class="navbar-nav d-flex align-items-md-center main-menu-box">
+
+
+                                    <li class="nav-item px-2 for-border-right">
+                                        <a class="nav-link active" aria-current="page" href="#">সর্বশেষ</a>
+                                    </li>
+                                    <li class="nav-item dropdown px-2 for-border-right">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            বাংলাদেশ
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="category.html">জাতীয়</a></li>
+                                            <li><a class="dropdown-item" href="category.html">সারাবাংলা</a></li>
+                                            <li><a class="dropdown-item" href="category.html">রাজধানী</a></li>
+                                            <li><a class="dropdown-item" href="category.html">রাজনীতি</a></li>
+                                            <li><a class="dropdown-item" href="category.html">আইন-আদালত</a></li>
+                                            <li><a class="dropdown-item" href="category.html">শিক্ষা</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item px-2 for-border-right">
+                                        <a class="nav-link" href="category.html">বিশ্ব</a>
+                                    </li>
+                                    <li class="nav-item px-2 for-border-right">
+                                        <a class="nav-link" href="category.html">খেলা</a>
+                                    </li>
+                                    <li class="nav-item px-2 for-border-right">
+                                        <a class="nav-link" href="category.html">বিনোদন</a>
+                                    </li>
+                                    <li class="nav-item px-2 for-border-right">
+                                        <a class="nav-link" href="category.html">বাণিজ্য</a>
+                                    </li>
+                                    <li class="nav-item dropdown px-2 for-border-right">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            ইসলামী জীবন
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="category.html">অনলাইন</a></li>
+                                            <li><a class="dropdown-item" href="category.html">প্রিন্ট</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item px-2 for-border-right">
+                                        <a class="nav-link" href="category.html">জীবনযাপন</a>
+                                    </li>
+                                    <li class="nav-item px-2 for-border-right">
+                                        <a class="nav-link" href="category.html">বসুন্ধরা শুভসংঘ</a>
+                                    </li>
+                                    <li class="nav-item px-2 for-border-right">
+                                        <a class="nav-link text-info" href="#">ভিডিও</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
+                                        <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            পত্রিকা
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="category.html">এক নজরে</a></li>
+                                            <li><a class="dropdown-item" href="category.html">প্রথম পাতা</a></li>
+                                            <li><a class="dropdown-item" href="category.html">শেষের পাতা</a></li>
+                                            <li><a class="dropdown-item" href="category.html">খবর</a></li>
+                                            <li><a class="dropdown-item" href="category.html">খেলা</a></li>
+                                            <li><a class="dropdown-item" href="category.html">দেশে দেশে</a></li>
+                                            <li><a class="dropdown-item" href="category.html">প্রিয় দেশ</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            ফিচার
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="category.html">ডাক্তার আছেন</a></li>
+                                            <li><a class="dropdown-item" href="category.html">চাকরি আছে</a></li>
+                                            <li><a class="dropdown-item" href="category.html">ঈদ বিনোদন</a></li>
+                                            <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৪</a></li>
+                                            <li><a class="dropdown-item" href="category.html">ঈদ উৎসব ২০২৪</a></li>
+                                            <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৫</a></li>
+                                            <li><a class="dropdown-item" href="category.html">সিলেবাসে নেই </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <!-- date for mobile version start  -->
+                                <div class="d-md-none d-block bg-body-tertiary w-100 mt-3 py-3 px-4 text-center">
+                                    <span>ঢাকা, শনিবার ১১ অক্টোবর ২০২৫</span>
+                                    <br>
+                                    <span>২৬ আশ্বিন ১৪৩২, ১৮ রবিউস সানি ১৪৪৭</span>
+                                </div>
+                                <!-- date for mobile version end  -->
+
+                            </div>
                         </div>
-                        <!-- close button  -->
-                        <button type="button" class="btn-close d-md-none d-block" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <!-- For mobile top menu Start -->
-                    <div class="d-flex justify-content-between d-md-none d-block mt-3 px-4">
-
-                        <li class="nav-item px-2 for-border-right border rounded-3 py-2 px-3">
-                            <a class="nav-link" href="#">ই-পেপার</a>
-                        </li>
-                        <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
-                            <a class="nav-link dropdown-toggle text-success" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                পত্রিকা
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="category.html">এক নজরে</a></li>
-                                <li><a class="dropdown-item" href="category.html">প্রথম পাতা</a></li>
-                                <li><a class="dropdown-item" href="category.html">শেষের পাতা</a></li>
-                                <li><a class="dropdown-item" href="category.html">খবর</a></li>
-                                <li><a class="dropdown-item" href="category.html">খেলা</a></li>
-                                <li><a class="dropdown-item" href="category.html">দেশে দেশে</a></li>
-                                <li><a class="dropdown-item" href="category.html">প্রিয় দেশ</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                ফিচার
-                            </a>
-                            <ul class="dropdown-menu feature-dropdown-position">
-                                <li><a class="dropdown-item" href="category.html">ডাক্তার আছেন</a></li>
-                                <li><a class="dropdown-item" href="category.html">চাকরি আছে</a></li>
-                                <li><a class="dropdown-item" href="category.html">ঈদ বিনোদন</a></li>
-                                <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৪</a></li>
-                                <li><a class="dropdown-item" href="category.html">ঈদ উৎসব ২০২৪</a></li>
-                                <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৫</a></li>
-                                <li><a class="dropdown-item" href="category.html">সিলেবাসে নেই </a></li>
-                            </ul>
-                        </li>
-                    </div>
-                    <!-- For mobile top menu end  -->
-
-                    <!-- Main Navbar Start  -->
-                    <ul class="navbar-nav d-flex align-items-md-center main-menu-box">
-
-
-                        <li class="nav-item px-2 for-border-right">
-                            <a class="nav-link active" aria-current="page" href="#">সর্বশেষ</a>
-                        </li>
-                        <li class="nav-item dropdown px-2 for-border-right">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                বাংলাদেশ
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="category.html">জাতীয়</a></li>
-                                <li><a class="dropdown-item" href="category.html">সারাবাংলা</a></li>
-                                <li><a class="dropdown-item" href="category.html">রাজধানী</a></li>
-                                <li><a class="dropdown-item" href="category.html">রাজনীতি</a></li>
-                                <li><a class="dropdown-item" href="category.html">আইন-আদালত</a></li>
-                                <li><a class="dropdown-item" href="category.html">শিক্ষা</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item px-2 for-border-right">
-                            <a class="nav-link" href="category.html">বিশ্ব</a>
-                        </li>
-                        <li class="nav-item px-2 for-border-right">
-                            <a class="nav-link" href="category.html">খেলা</a>
-                        </li>
-                        <li class="nav-item px-2 for-border-right">
-                            <a class="nav-link" href="category.html">বিনোদন</a>
-                        </li>
-                        <li class="nav-item px-2 for-border-right">
-                            <a class="nav-link" href="category.html">বাণিজ্য</a>
-                        </li>
-                        <li class="nav-item dropdown px-2 for-border-right">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                ইসলামী জীবন
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="category.html">অনলাইন</a></li>
-                                <li><a class="dropdown-item" href="category.html">প্রিন্ট</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item px-2 for-border-right">
-                            <a class="nav-link" href="category.html">জীবনযাপন</a>
-                        </li>
-                        <li class="nav-item px-2 for-border-right">
-                            <a class="nav-link" href="category.html">বসুন্ধরা শুভসংঘ</a>
-                        </li>
-                        <li class="nav-item px-2 for-border-right">
-                            <a class="nav-link text-info" href="#">ভিডিও</a>
-                        </li>
-
-                        <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
-                            <a class="nav-link dropdown-toggle text-success" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                পত্রিকা
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="category.html">এক নজরে</a></li>
-                                <li><a class="dropdown-item" href="category.html">প্রথম পাতা</a></li>
-                                <li><a class="dropdown-item" href="category.html">শেষের পাতা</a></li>
-                                <li><a class="dropdown-item" href="category.html">খবর</a></li>
-                                <li><a class="dropdown-item" href="category.html">খেলা</a></li>
-                                <li><a class="dropdown-item" href="category.html">দেশে দেশে</a></li>
-                                <li><a class="dropdown-item" href="category.html">প্রিয় দেশ</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                ফিচার
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="category.html">ডাক্তার আছেন</a></li>
-                                <li><a class="dropdown-item" href="category.html">চাকরি আছে</a></li>
-                                <li><a class="dropdown-item" href="category.html">ঈদ বিনোদন</a></li>
-                                <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৪</a></li>
-                                <li><a class="dropdown-item" href="category.html">ঈদ উৎসব ২০২৪</a></li>
-                                <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৫</a></li>
-                                <li><a class="dropdown-item" href="category.html">সিলেবাসে নেই </a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item d-md-block d-none">
-                            <a class="nav-link" href="#"><i class="bi bi-list fs-4"></i></a>
-                        </li>
-                    </ul>
-
-                    <!-- date for mobile version start  -->
-                    <div class="d-md-none d-block bg-body-tertiary w-100 mt-3 py-3 px-4 text-center">
-                        <span>ঢাকা, শনিবার ১১ অক্টোবর ২০২৫</span>
-                        <br>
-                        <span>২৬ আশ্বিন ১৪৩২, ১৮ রবিউস সানি ১৪৪৭</span>
-                    </div>
-                    <!-- date for mobile version end  -->
-
+                    </nav>
                 </div>
-            </div>
 
-        </nav>
+                <!-- Right Side Offcanvas menu Start  -->
+                <div class="col-1 d-flex justify-content-between align-items-center d-md-block d-none">
+                    <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="bi bi-justify text-secondary"></i>
+                    </a>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header d-flex flex-column justify-content-between">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="offcanvas-title w-50" id="offcanvasExampleLabel"><img src="images/main-logo.png"
+                                        alt="logo" class="img-fluid"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- offcanvas top menu Start -->
+                            <div class="d-flex justify-content-between mt-3">
+                                <ul class="d-flex justify-content-between list-unstyled">
+                                <li class="nav-item  for-border-right border rounded-3 py-2 px-3 me-2">
+                                    <a class="nav-link" href="#">ই-পেপার</a>
+                                </li>
+                                <li class="nav-item dropdown for-border-right border rounded-3 py-2 px-3 me-2">
+                                    <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        পত্রিকা
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="category.html">এক নজরে</a></li>
+                                        <li><a class="dropdown-item" href="category.html">প্রথম পাতা</a></li>
+                                        <li><a class="dropdown-item" href="category.html">শেষের পাতা</a></li>
+                                        <li><a class="dropdown-item" href="category.html">খবর</a></li>
+                                        <li><a class="dropdown-item" href="category.html">খেলা</a></li>
+                                        <li><a class="dropdown-item" href="category.html">দেশে দেশে</a></li>
+                                        <li><a class="dropdown-item" href="category.html">প্রিয় দেশ</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown px-2 for-border-right border rounded-3 py-2 px-3">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        ফিচার
+                                    </a>
+                                    <ul class="dropdown-menu feature-dropdown-position">
+                                        <li><a class="dropdown-item" href="category.html">ডাক্তার আছেন</a></li>
+                                        <li><a class="dropdown-item" href="category.html">চাকরি আছে</a></li>
+                                        <li><a class="dropdown-item" href="category.html">ঈদ বিনোদন</a></li>
+                                        <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৪</a></li>
+                                        <li><a class="dropdown-item" href="category.html">ঈদ উৎসব ২০২৪</a></li>
+                                        <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৫</a></li>
+                                        <li><a class="dropdown-item" href="category.html">সিলেবাসে নেই </a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            </div>
+                            <!-- offcanvas  top menu end  -->
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- offcanvas Main Navbar Start  -->
+                            <ul class="navbar-nav d-flex main-menu-box">
+
+
+                                <li class="nav-item px-2 for-border-right">
+                                    <a class="nav-link active" aria-current="page" href="#">সর্বশেষ</a>
+                                </li>
+                                <li class="nav-item dropdown px-2 for-border-right">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        বাংলাদেশ
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="category.html">জাতীয়</a></li>
+                                        <li><a class="dropdown-item" href="category.html">সারাবাংলা</a></li>
+                                        <li><a class="dropdown-item" href="category.html">রাজধানী</a></li>
+                                        <li><a class="dropdown-item" href="category.html">রাজনীতি</a></li>
+                                        <li><a class="dropdown-item" href="category.html">আইন-আদালত</a></li>
+                                        <li><a class="dropdown-item" href="category.html">শিক্ষা</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item px-2 for-border-right">
+                                    <a class="nav-link" href="category.html">বিশ্ব</a>
+                                </li>
+                                <li class="nav-item px-2 for-border-right">
+                                    <a class="nav-link" href="category.html">খেলা</a>
+                                </li>
+                                <li class="nav-item px-2 for-border-right">
+                                    <a class="nav-link" href="category.html">বিনোদন</a>
+                                </li>
+                                <li class="nav-item px-2 for-border-right">
+                                    <a class="nav-link" href="category.html">বাণিজ্য</a>
+                                </li>
+                                <li class="nav-item dropdown px-2 for-border-right">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        ইসলামী জীবন
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="category.html">অনলাইন</a></li>
+                                        <li><a class="dropdown-item" href="category.html">প্রিন্ট</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item px-2 for-border-right">
+                                    <a class="nav-link" href="category.html">জীবনযাপন</a>
+                                </li>
+                                <li class="nav-item px-2 for-border-right">
+                                    <a class="nav-link" href="category.html">বসুন্ধরা শুভসংঘ</a>
+                                </li>
+                                <li class="nav-item px-2 for-border-right">
+                                    <a class="nav-link text-info" href="#">ভিডিও</a>
+                                </li>
+
+                                <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
+                                    <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        পত্রিকা
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="category.html">এক নজরে</a></li>
+                                        <li><a class="dropdown-item" href="category.html">প্রথম পাতা</a></li>
+                                        <li><a class="dropdown-item" href="category.html">শেষের পাতা</a></li>
+                                        <li><a class="dropdown-item" href="category.html">খবর</a></li>
+                                        <li><a class="dropdown-item" href="category.html">খেলা</a></li>
+                                        <li><a class="dropdown-item" href="category.html">দেশে দেশে</a></li>
+                                        <li><a class="dropdown-item" href="category.html">প্রিয় দেশ</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown px-2 for-border-right d-md-block d-none">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        ফিচার
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="category.html">ডাক্তার আছেন</a></li>
+                                        <li><a class="dropdown-item" href="category.html">চাকরি আছে</a></li>
+                                        <li><a class="dropdown-item" href="category.html">ঈদ বিনোদন</a></li>
+                                        <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৪</a></li>
+                                        <li><a class="dropdown-item" href="category.html">ঈদ উৎসব ২০২৪</a></li>
+                                        <li><a class="dropdown-item" href="category.html">ঈদ সংখ্যা ২০২৫</a></li>
+                                        <li><a class="dropdown-item" href="category.html">সিলেবাসে নেই </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <!-- date for mobile version start  -->
+                            <div class="bg-body-tertiary w-100 mt-3 py-3 px-4 text-center">
+                                <span>ঢাকা, শনিবার ১১ অক্টোবর ২০২৫</span>
+                                <br>
+                                <span>২৬ আশ্বিন ১৪৩২, ১৮ রবিউস সানি ১৪৪৭</span>
+                            </div>
+                            <!-- date for mobile version end  -->
+                        </div>
+                    </div>
+                </div>
+                 <!-- Right Side Offcanvas menu End  -->
+
+            </div>
+        </div>
+
+
+
     </section>
     <!-- ======== Navbar Section End ======== -->
 
@@ -295,7 +458,8 @@
                                 <h6 class="text-center text-success">শেয়ার</h6>
                                 <hr class="mt-2">
 
-                                <ul class="list-unstyled text-center d-md-block d-flex justify-content-between align-items-center">
+                                <ul
+                                    class="list-unstyled text-center d-md-block d-flex justify-content-between align-items-center">
                                     <li class="p-2"><a href="#"><i class="bi bi-facebook"></i></a></li>
                                     <li class="p-2"><a href="#"><i class="bi bi-linkedin"></i></a></li>
                                     <li class="p-2"><a href="#"><i class="bi bi-twitter"></i></a></li>
@@ -598,7 +762,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- Sorbadik potitho End  -->
                 </div>
@@ -773,7 +937,6 @@
                     </div>
                     <div class="footer-menu-hover">
                         <ul class="list-unstyled mb-0">
-
                             <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">জাতীয়</a></li>
                             <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">বিশ্ব</a></li>
                             <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">বিনোদন</a></li>
